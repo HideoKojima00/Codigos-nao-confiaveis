@@ -1,6 +1,6 @@
 //MUITO CUIDADO! ESSES CÓDIGOS NÃO PODEM SOFRER MUITAS ALTERAÇÕES! SE NÃO PODEM ACABAR NÃO FUNCIONANDO CORRETAMENTE
 
-//ANDAR
+//ANDAR PARA OS LADOS DIRETO E ESQUERDO
 
 if teclado_check(ord("D"))
 {
@@ -15,7 +15,7 @@ x-=1
 imagem_xescala=-5
 }
 
-//Colisão e pulo
+//COLISÇÃO E PULO
 
 if place_meeting(x,y,Obj_wall)
 {
@@ -30,4 +30,10 @@ outro
 {
    vvelocidade+=0,3
 }
+//MUDAR AS "ANIMATIONS" NO CASO OS SPRITES DO PERSONAGEM 
+//ESSES CÓDIGOS AINDA NÃO FORAM TERMINADOS
+
+var num = skeleton_animation_get_frames(skeleton_animation_get());
+image_index = num -1;
+image_speed = 0;
 
