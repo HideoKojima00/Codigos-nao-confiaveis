@@ -30,3 +30,4 @@ outro
 {
    vvelocidade+=0,3
 }
+
